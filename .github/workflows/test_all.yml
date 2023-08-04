@@ -1,10 +1,9 @@
 name: Tests
 on:
   workflow_run:
-    workflow:
-      - Run Tests
+    workflows: [Run Tests]
     types:
-      - completed 
+      - completed
   push:
     branches: 
       - main
